@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wrapper header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.wrapper .container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.wrapper .form-container form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
+.wrapper .form-container input {
+  display: block;
+  min-width: 400px;
+}
+
+.wrapper .form-container input,
+.wrapper .form-container button {
+  padding: 0.5em;
+}
+
+.wrapper .form-container button {
+  border-radius: 5px;
+  background-color: lightblue;
+  color: black;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.notes-container .single-note {
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 0.5em 1em;
+}
+
+.single-note .btn-container {
+  display: flex;
+  gap: 20px;
+
+}
+
+.single-note button {
+  border: none;
+  background-color: lightblue;
+  color: white;
+  padding: 0.5em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.single-note button.danger {
+  background-color: red;
+}
